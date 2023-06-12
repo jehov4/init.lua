@@ -1,2 +1,3 @@
 require("jehov4.remap")
-print("jehov4 says hi")
+require("jehov4.set")
+require("jehov4.packer")

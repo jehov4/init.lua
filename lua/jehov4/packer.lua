@@ -11,21 +11,19 @@ return require('packer').startup(function(use)
 	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
-  }
-  
-  use {
-	  'fugalh/desert.vim', 
-	  as = "desert",
-	  config = function()
-		  vim.cmd('colorscheme desert')
-	  end
-
-  }
-
+  }  
+  use 'tanvirtin/monokai.nvim' 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
+  use 'neovim/nvim-lspconfig'
+  use 'simrat39/rust-tools.nvim'
+  
+  -- Debugging
+  use 'nvim-lua/plenary.nvim'
+  use 'mfussenegger/nvim-dap'
+  use 'rcarriga/nvim-dap-ui'
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
