@@ -13,13 +13,15 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }  
   use 'tanvirtin/monokai.nvim' 
+  use 'maxmx03/solarized.nvim'
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
   use 'neovim/nvim-lspconfig'
   use 'simrat39/rust-tools.nvim'
-  
+  use 'andweeb/presence.nvim'
+
   -- Debugging
   use 'nvim-lua/plenary.nvim'
   use 'mfussenegger/nvim-dap'

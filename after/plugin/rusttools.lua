@@ -15,3 +15,5 @@ rt.setup({
 		},
 	},
 })
+
+vim.keymap.set("n", "<Leader>rr", function() rt.runnables.runnables() end)
